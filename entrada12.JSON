@@ -1,0 +1,31 @@
+{ 
+"Operaciones":[
+    {
+        "Operacion":"suma",
+        "Valor1":6.5,
+        "Valor2":3.5
+    }, 
+    {
+        "Operacion":"resta",
+        "Valor1":6.5,
+        "Valor2":[
+            {
+                "Operacion":"multiplicacion",
+                "Valor1":5,
+                "Valor2":5
+            }
+        ]sff3
+    }],
+"Configuraciones":[
+	{
+	"texto":"Realizacion de Operaciones",
+        "color-fondo-nodo":"amarillo",
+        "color-fuente-nodo":"negro",
+        "forma-nodo":"circulo"	
+    }	
+    ]
+}
+
+
+
+
