@@ -178,7 +178,7 @@ def Graphviz(respuestas_Operaciones):
                     print(respuesta.ejecutarT())
                     if respuesta.ejecutarT() == "texto":  # Podemos recibir cualquier texto
                         Titulo = str(respuesta.texto.operar(None))
-                    if respuesta.ejecutarT() == "color-fondo-nodo":  # Vericar el color del nodo a asignar
+                    if respuesta.ejecutarT() == "fondo":  # Vericar el color del nodo a asignar
                         if temporal == ("amarillo" or "yellow"):
                             temporal = "yellow"
                             colorNodo = temporal
@@ -195,7 +195,7 @@ def Graphviz(respuestas_Operaciones):
                             temporal = "purple"
                             colorNodo = temporal
 
-                    if respuesta.ejecutarT() == "color-fuente-nodo":  # Vericar la fuente del nodo a asignar
+                    if respuesta.ejecutarT() == "fuente":  # Vericar la fuente del nodo a asignar
 
                         if temporal == ("amarillo" or "yellow"):
                             temporal = "yellow"
@@ -216,7 +216,7 @@ def Graphviz(respuestas_Operaciones):
                             temporal = "black"
                             fuenteNodo = temporal
 
-                    if respuesta.ejecutarT() == "forma-nodo":  # Vericar el formato de nodo a asignar
+                    if respuesta.ejecutarT() == "forma":  # Vericar el formato de nodo a asignar
                         if temporal == ("circulo" or "circle"):
                             temporal = "circle"
                             formaNodo = temporal
@@ -260,9 +260,8 @@ def Graphviz(respuestas_Operaciones):
 
                     if(respuesta.right):    
                         text += f"\tnodoDere{CnumDerecho}" + "[" + f"style = filled" + f",fillcolor = {colorNodo}" + f",fontcolor = {fuenteNodo}" + "]\n"
-                    text += f"\tnodoT{Ctotal}" + "[" + f"style = filled" + f",fillcolor = {colorNodo}" + f",fontcolor = {fuenteNodo}" + "]\n"
 
-                    text += f"\tnodoRespuesta{Crespuesta}" + f"[label = \"{str(respuesta.tipo.operar(None))}: " + "\"]\n"
+                    text += f"\tnodoRespuesta{Crespuesta}" + f"[label = \"{str(respuesta.tipo.operar(None))}:\n{str(respuesta.operar(None))} " + "\"]\n"
                     text += f"\tnodoIzqu{CnumIzquierdo}" + "[label = \"Valor1: " + f" {str(respuesta.left.operar(None))} " + "\"]\n"
 
                    
@@ -273,8 +272,7 @@ def Graphviz(respuestas_Operaciones):
                     if(respuesta.right):
                         text += f"\tnodoRespuesta{Crespuesta} -> nodoDere{CnumDerecho}\n"
 
-                    text += f"\tnodoT{Ctotal}" + f"[label = \"{str(respuesta.operar(None))}" + "\"]\n"
-                    text += f"\tnodoT{Ctotal} -> nodoRespuesta{Crespuesta}\n"
+
 
                 else:
                     pass

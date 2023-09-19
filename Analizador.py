@@ -7,13 +7,13 @@ from Abstract.Numero import *
 
 
 reserved = {
-    'ROPERACIONES'      : 'Operaciones',
-    'ROPERACION'        : 'Operacion',
-    'RCONFIGURACION'    : 'Configuraciones',
+    'ROPERACIONES'      : 'operaciones',
+    'ROPERACION'        : 'operacion',
+    'RCONFIGURACION'    : 'configuraciones',
     'RTEXTO'            : 'texto',
-    'RCOLORFONDONODO'   : 'color-fondo-nodo',
-    'RCOLORFUENTENODO'  : 'color-fuente-nodo',
-    'RFORMANODO'        : 'forma-nodo',
+    'RCOLORFONDONODO'   : 'fondo',
+    'RCOLORFUENTENODO'  : 'fuente',
+    'RFORMANODO'        : 'forma',
     'RVALOR1'           : 'Valor1',
     'RVALOR2'           : 'Valor2',
     'RSUMA'             : 'Suma',
@@ -149,13 +149,13 @@ def operar():
     while lista_lexemas:
 
         lexema = lista_lexemas.pop(0)
-        if lexema.operar(None) == 'Operacion':
+        if lexema.operar(None) == 'operacion':
             operacion = lista_lexemas.pop(0)
-        elif lexema.operar(None) == 'Valor1':
+        elif lexema.operar(None) == 'valor1':
             n1 = lista_lexemas.pop(0)
             if n1.operar(None) == '[':
                 n1 = operar()
-        elif lexema.operar(None) ==  'Valor2':
+        elif lexema.operar(None) ==  'valor2':
             n2 = lista_lexemas.pop(0)
             if n2.operar(None) == '[':
                 n2 = operar()
@@ -166,21 +166,21 @@ def operar():
             text = lista_lexemas.pop(0)
             return Texto(text, tipo ,  f'Inicio: {text.getFila()}', f'Fin: {text.getColumna()}')
 
-        if lexema.operar(None) == 'color-fondo-nodo':
+        if lexema.operar(None) == 'fondo':
 
-            tipo = 'color-fondo-nodo'
+            tipo = 'fondo'
             text = lista_lexemas.pop(0)
             return Texto(text, tipo ,  f'Inicio: {text.getFila()}', f'Fin: {text.getColumna()}')
 
-        if lexema.operar(None) == 'color-fuente-nodo':
+        if lexema.operar(None) == 'fuente':
 
-            tipo = 'color-fuente-nodo'
+            tipo = 'fuente'
             text = lista_lexemas.pop(0)
             return Texto(text, tipo ,  f'Inicio: {text.getFila()}', f'Fin: {text.getColumna()}')
 
-        if lexema.operar(None) == 'forma-nodo':
+        if lexema.operar(None) == 'forma':
 
-            tipo = 'forma-nodo'
+            tipo = 'forma'
             text = lista_lexemas.pop(0)
             return Texto(text, tipo ,  f'Inicio: {text.getFila()}', f'Fin: {text.getColumna()}')
 

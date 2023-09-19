@@ -1,59 +1,59 @@
 { 
-"Operaciones":[
+"operaciones":[
     {
-        "Operacion":"suma",
-        "Valor1":6.5,
-        "Valor2":3.5
+        "operacion":"suma",
+        "valor1":6.5,
+        "valor2":3.5
     }, 
     {
-        "Operacion":"resta",
-        "Valor1":6.5,
-        "Valor2":[
+        "operacion":"resta",
+        "valor1":6.5,
+        "valor2":[
             {
                 "Operacion":"multiplicacion",
-                "Valor1":5,
-                "Valor2":5
+                "valor1":5,
+                "valor2":5
             }
         ]sff3
     }, 
     {
-        "Operacion":"multiplicacion",
-        "Valor1":5,
-        "Valor2":5
+        "operacion":"multiplicacion",
+        "valor1":5,
+        "valor2":5
     }, 
     {
-        "Operacion":"potencia",
-        "Valor1":2,
-        "Valor2":3
+        "operacion":"potencia",
+        "valor1":2,
+        "valor2":3
     },     
     {
-        "Operacion":"seno",
-        "Valor1":90
+        "operacion":"seno",
+        "valor1":90
     },
     {
-        "Operacion":"coseno",
-        "Valor1":90
+        "operacion":"coseno",
+        "valor1":90
     },
     {
-        "Operacion":"tangente",
-        "Valor1":90
+        "operacion":"tangente",
+        "valor1":90
     },?
     {
-        "Operacion":"inverso",
-        "Valor1":90
+        "operacion":"inverso",
+        "valor1":90
     },
     {
-        "Operacion":"division",
-        "Valor1":10,
-        "Valor2":3
+        "operacion":"division",
+        "valor1":10,
+        "valor2":3
     },
     {
-        "Operacion":"mod",
-        "Valor1":10,
-        "Valor2":3
+        "operacion":"mod",
+        "valor1":10,
+        "valor2":3
     }
     ],
-"Configuraciones":[
+"configuraciones":[
 	{
 	"texto":"Realizacion de Operaciones",
         "color-fondo-nodo":"amarillo",
@@ -62,6 +62,7 @@
     }	
     ]
 }
+
 
 
 
