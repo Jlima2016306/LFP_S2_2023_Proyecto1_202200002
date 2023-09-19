@@ -5,8 +5,8 @@
          "descripcion": {
             "lexema": "s",
             "tipo": "error lexico",
-            "columna": 10,
-            "fila": 17
+            "columna": 3,
+            "fila": 1
          }
       },
       {
@@ -14,8 +14,8 @@
          "descripcion": {
             "lexema": "f",
             "tipo": "error lexico",
-            "columna": 11,
-            "fila": 17
+            "columna": 4,
+            "fila": 1
          }
       },
       {
@@ -23,53 +23,26 @@
          "descripcion": {
             "lexema": "f",
             "tipo": "error lexico",
-            "columna": 12,
-            "fila": 17
+            "columna": 5,
+            "fila": 1
          }
       },
       {
          "No": 4,
          "descripcion": {
-            "lexema": "?",
+            "lexema": "a",
             "tipo": "error lexico",
-            "columna": 7,
-            "fila": 40
+            "columna": 14,
+            "fila": 16
          }
       },
       {
          "No": 5,
          "descripcion": {
-            "lexema": "s",
+            "lexema": "a",
             "tipo": "error lexico",
-            "columna": 10,
-            "fila": 85
-         }
-      },
-      {
-         "No": 6,
-         "descripcion": {
-            "lexema": "f",
-            "tipo": "error lexico",
-            "columna": 11,
-            "fila": 85
-         }
-      },
-      {
-         "No": 7,
-         "descripcion": {
-            "lexema": "f",
-            "tipo": "error lexico",
-            "columna": 12,
-            "fila": 85
-         }
-      },
-      {
-         "No": 8,
-         "descripcion": {
-            "lexema": "?",
-            "tipo": "error lexico",
-            "columna": 7,
-            "fila": 108
+            "columna": 14,
+            "fila": 17
          }
       }
    ]

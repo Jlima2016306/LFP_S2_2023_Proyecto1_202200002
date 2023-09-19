@@ -21,7 +21,7 @@ class TextEditorApp:
 
         self.text_widget = ScrolledText(self.root, wrap=tk.WORD)
         self.text_widget.pack(expand=True, fill='both')
-
+        self.wadm = None
         self.text_widget.bind('<Key>', self.update_line_numbers)
         self.text_widget.bind('<MouseWheel>', self.update_line_numbers)
 
@@ -33,7 +33,8 @@ class TextEditorApp:
         self.file_menu = tk.Menu(self.menu_bar, tearoff=0)
         self.menu_bar.add_cascade(label="Archivo", menu=self.file_menu)
         self.file_menu.add_command(label="Abrir", command=self.open_file)
-        self.file_menu.add_command(label="Guardar", command=self.save_file)
+        self.file_menu.add_command(label="Guardar Como", command=self.save_file)
+        self.file_menu.add_command(label="Guardar", command=self.guardar_archivo)
         self.file_menu.add_separator()
         self.file_menu.add_command(label="Salir", command=self.root.quit)
         self.menu_bar.add_command(label="Analizar", command=self.analizar)
@@ -41,8 +42,10 @@ class TextEditorApp:
         self.menu_bar.add_command(label="Errores", command=self.Errores)
 
     def open_file(self):
-
+        
         file_path = filedialog.askopenfilename(filetypes=[("Archivos JSON", "*.JSON")])
+        self.wadm = file_path
+        print(self.wadm)
         if file_path:
             with open(file_path, 'r') as file:
                 content = file.read()
@@ -55,12 +58,33 @@ class TextEditorApp:
 
 
     def save_file(self):
+        print(self.wadm)
         file_path = filedialog.asksaveasfilename(defaultextension=".txt", filetypes=[("Archivos JSON", "*.JSON")])
         if file_path:
             content = self.text_widget.get(1.0, tk.END)
             with open(file_path, 'w') as file:
                 file.write(content)
             messagebox.showinfo("Guardado", "Archivo guardado exitosamente.")
+
+    def guardar_archivo(self):
+        print(self.wadm)
+        if self.wadm:
+            content = self.text_widget.get(1.0, tk.END)
+            with open(self.wadm, 'w') as file:
+                
+                file.write(content)
+            self.update_line_numbers()
+            messagebox.showinfo("Guardado", "Archivo guardado exitosamente.")
+        if self.wadm:
+            with open(self.wadm, 'r') as file:
+                content = file.read()
+                #self.data = content
+                self.text_widget.delete(1.0, tk.END)
+                self.text_widget.insert(tk.END, content)
+            self.update_line_numbers()
+        self.data = self.text_widget.get(1.0, tk.END)    
+
+
 
     def update_line_numbers(self, event=None):
         line_count = self.text_widget.get('1.0', tk.END).count('\n')
