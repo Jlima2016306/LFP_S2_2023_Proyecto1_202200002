@@ -1,52 +1,16 @@
 digraph G {
 
-	node [shape=circle]
-	nodo0 [label = "Operaciones"]
-	nodo0[fontcolor = red]
-	nodoRespuesta1[style = filled,fillcolor = blue,fontcolor = red]
-	nodoIzqu1[style = filled,fillcolor = blue,fontcolor = red]
-	nodoDere1[style = filled,fillcolor = blue,fontcolor = red]
+	node [shape=square]
+	nodo0 [label = "1"]
+	nodo0[fontcolor = black]
+	nodoRespuesta1[style = filled,fillcolor = blue,fontcolor = black]
+	nodoIzqu1[style = filled,fillcolor = blue,fontcolor = black]
+	nodoDere1[style = filled,fillcolor = blue,fontcolor = black]
 	nodoRespuesta1[label = "suma:
-9.82 "]
+20.05 "]
 	nodoIzqu1[label = "Valor1:  4.5 "]
-	nodoDere1[label = "Valor2:  5.32 "]
+	nodoDere1[label = "Valor2:  15.55 "]
 	nodoRespuesta1 -> nodoIzqu1
 	nodoRespuesta1 -> nodoDere1
-	nodoRespuesta2[style = filled,fillcolor = blue,fontcolor = red]
-	nodoIzqu2[style = filled,fillcolor = blue,fontcolor = red]
-	nodoDere2[style = filled,fillcolor = blue,fontcolor = red]
-	nodoRespuesta2[label = "resta:
--995.5 "]
-	nodoIzqu2[label = "Valor1:  4.5 "]
-	nodoDere2[label = "Valor2:  1000 "]
-	nodoRespuesta2 -> nodoIzqu2
-	nodoRespuesta2 -> nodoDere2
-	nodoRespuesta3[style = filled,fillcolor = blue,fontcolor = red]
-	nodoIzqu3[style = filled,fillcolor = blue,fontcolor = red]
-	nodoDere3[style = filled,fillcolor = blue,fontcolor = red]
-	nodoRespuesta3[label = "suma:
-6.32 "]
-	nodoIzqu3[label = "Valor1:  1.0 "]
-	nodoDere3[label = "Valor2:  5.32 "]
-	nodoRespuesta3 -> nodoIzqu3
-	nodoRespuesta3 -> nodoDere3
-	nodoRespuesta4[style = filled,fillcolor = blue,fontcolor = red]
-	nodoIzqu4[style = filled,fillcolor = blue,fontcolor = red]
-	nodoDere4[style = filled,fillcolor = blue,fontcolor = red]
-	nodoRespuesta4[label = "multiplicacion:
-21 "]
-	nodoIzqu4[label = "Valor1:  7 "]
-	nodoDere4[label = "Valor2:  3 "]
-	nodoRespuesta4 -> nodoIzqu4
-	nodoRespuesta4 -> nodoDere4
-	nodoRespuesta5[style = filled,fillcolor = blue,fontcolor = red]
-	nodoIzqu5[style = filled,fillcolor = blue,fontcolor = red]
-	nodoDere5[style = filled,fillcolor = blue,fontcolor = red]
-	nodoRespuesta5[label = "division:
-5.0 "]
-	nodoIzqu5[label = "Valor1:  15 "]
-	nodoDere5[label = "Valor2:  3 "]
-	nodoRespuesta5 -> nodoIzqu5
-	nodoRespuesta5 -> nodoDere5
 
 }

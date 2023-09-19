@@ -6,14 +6,14 @@ class Lexema(Expression):
         self.lexema = lexema
         super().__init__(fila, columna)
 
-    def operar(self, arbol):   #! Retorna mi Lexema
+    def operar(self, arbol):  
         return self.lexema
 
-    def operarT(self):   #! Retorna mi Lexema
+    def operarT(self): 
         return self.lexema
     
-    def getFila(self):              #! Retorna la fila
+    def getFila(self):             
         return super().getFila()
 
-    def getColumna(self):           #! Retorna la columna
+    def getColumna(self):          
         return super().getColumna()

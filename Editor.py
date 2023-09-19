@@ -157,7 +157,7 @@ class TextEditorApp:
             intrucciones = intruccion(self.data)
             respuestas_Operaciones = operar_()
 
-            contenido = "digraph G {\n\n"                           #CREAMOS NUESTRO ARCHIVO CON COMANDOS
+            contenido = "digraph G {\n\n"                         
             r = open("Operaciones.dot", "w", encoding="utf-8")
             contenido += str(Graphviz(respuestas_Operaciones))
             contenido += '\n}'
@@ -172,8 +172,7 @@ class TextEditorApp:
             print("...............................................................")
             print("")
             print("FIN.....")
-            # ! dot -Tpng Operaciones.dot -o Operaciones.png
-            # ! Generar desde aquí la imagen
+
             os.environ["PATH"] += os.pathsep + 'C:/Program Files/Graphviz/bin'
             os.system('dot -Tpng Operaciones.dot -o grafo.png')
             print("terminado")
@@ -200,62 +199,22 @@ def Graphviz(respuestas_Operaciones):
                     temporal = str(respuesta.texto.operar(None)).lower()
                     print(respuesta.texto.operar(None))
                     print(respuesta.ejecutarT())
-                    if respuesta.ejecutarT() == "texto":  # Podemos recibir cualquier texto
+                    if respuesta.ejecutarT() == "texto":  
                         Titulo = str(respuesta.texto.operar(None))
-                    if respuesta.ejecutarT() == "fondo":  # Vericar el color del nodo a asignar
-                        if temporal == ("amarillo" or "yellow"):
-                            temporal = "yellow"
-                            colorNodo = temporal
-                        elif temporal == ("verde" or "green"):
-                            temporal = "green"
-                            colorNodo = temporal
-                        elif temporal == ("azul" or "blue"):
-                            temporal = "blue"
-                            colorNodo = temporal
-                        elif temporal == ("rojo" or "red"):
-                            temporal = "red"
-                            colorNodo = temporal
-                        elif temporal == ("morado" or "purple"):
-                            temporal = "purple"
+                    if respuesta.ejecutarT() == "fondo":  
                             colorNodo = temporal
 
-                    if respuesta.ejecutarT() == "fuente":  # Vericar la fuente del nodo a asignar
 
-                        if temporal == ("amarillo" or "yellow"):
-                            temporal = "yellow"
-                            fuenteNodo = temporal
-                        elif temporal == ("verde" or "green"):
-                            temporal = "green"
-                            fuenteNodo = temporal
-                        elif temporal == ("azul" or "blue"):
-                            temporal = "blue"
-                            fuenteNodo = temporal
-                        elif temporal == ("rojo" or "red"):
-                            temporal = "red"
-                            fuenteNodo = temporal
-                        elif temporal == ("morado" or "purple"):
-                            temporal = "purple"
-                            fuenteNodo = temporal
-                        elif temporal == ("negro" or "black"):
-                            temporal = "black"
+                    if respuesta.ejecutarT() == "fuente": 
+
                             fuenteNodo = temporal
 
-                    if respuesta.ejecutarT() == "forma":  # Vericar el formato de nodo a asignar
-                        if temporal == ("circulo" or "circle"):
-                            temporal = "circle"
+
+                    if respuesta.ejecutarT() == "forma":  
+
                             formaNodo = temporal
-                        elif temporal == ("cuadrado" or "square"):
-                            temporal = "square"
-                            formaNodo = temporal
-                        elif temporal == ("triangulo" or "triangle"):
-                            temporal = "triangle"
-                            formaNodo = temporal
-                        elif temporal == ("rectangulo" or "box"):
-                            temporal = "box"
-                            formaNodo = temporal
-                        elif temporal == ("elipse" or "ellipse"):
-                            temporal = "ellipse"
-                            formaNodo = temporal
+
+
 
             temporal = ''
             CnumIzquierdo = 0
@@ -265,11 +224,9 @@ def Graphviz(respuestas_Operaciones):
 
             text = ""
             text += f"\tnode [shape={formaNodo}]\n"
-            # text += f"\tnode [shape=box];\n"
 
             text += f"\tnodo0 [label = \"{Titulo}\"]\n"
             text += f"\tnodo0" + "[" + f"fontcolor = {fuenteNodo}" + "]\n"
-            # text += f"\tnodo0 [label = \"CambiarPorTexto\"]\n"    # ESTE DEJAR
 
             for respuesta in respuestas_Operaciones:
                 CnumIzquierdo += 1
