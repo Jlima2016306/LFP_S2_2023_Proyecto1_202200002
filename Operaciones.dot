@@ -1,16 +1,232 @@
 digraph G {
 
-	node [shape=square]
-	nodo0 [label = "1"]
+	node [shape=circle]
+	nodo0 [label = "realizacion de operaciones"]
 	nodo0[fontcolor = black]
-	nodoRespuesta1[style = filled,fillcolor = blue,fontcolor = black]
-	nodoIzqu1[style = filled,fillcolor = blue,fontcolor = black]
-	nodoDere1[style = filled,fillcolor = blue,fontcolor = black]
-	nodoRespuesta1[label = "suma:
-20.05 "]
-	nodoIzqu1[label = "Valor1:  4.5 "]
-	nodoDere1[label = "Valor2:  15.55 "]
+	nodoRespuesta1[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoIzqu1[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoDere1[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoRespuesta1[label = "resta:
+3.0 "]
+	nodoIzqu1[label = "Valor1:  6.5 "]
+	nodoDere1[label = "Valor2:  3.5 "]
 	nodoRespuesta1 -> nodoIzqu1
 	nodoRespuesta1 -> nodoDere1
+	nodoRespuesta2[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoIzqu2[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoDere2[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoRespuesta2[label = "suma:
+7.62 "]
+	nodoIzqu2[label = "Valor1:  2.3 "]
+	nodoDere2[label = "Valor2:  5.32 "]
+	nodoRespuesta2 -> nodoIzqu2
+	nodoRespuesta2 -> nodoDere2
+	nodoRespuesta3[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoIzqu3[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoDere3[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoRespuesta3[label = "multiplicacion:
+2.3 "]
+	nodoIzqu3[label = "Valor1:  2.3 "]
+	nodoDere3[label = "Valor2:  1.0 "]
+	nodoRespuesta3 -> nodoIzqu3
+	nodoRespuesta3 -> nodoDere3
+	nodoRespuesta4[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoIzqu4[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoDere4[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoRespuesta4[label = "division:
+0.18796992481203006 "]
+	nodoIzqu4[label = "Valor1:  1 "]
+	nodoDere4[label = "Valor2:  5.32 "]
+	nodoRespuesta4 -> nodoIzqu4
+	nodoRespuesta4 -> nodoDere4
+	nodoRespuesta5[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoIzqu5[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoDere5[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoRespuesta5[label = "resta:
+6.6 "]
+	nodoIzqu5[label = "Valor1:  7.8 "]
+	nodoDere5[label = "Valor2:  1.2 "]
+	nodoRespuesta5 -> nodoIzqu5
+	nodoRespuesta5 -> nodoDere5
+	nodoRespuesta6[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoIzqu6[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoDere6[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoRespuesta6[label = "suma:
+11.2 "]
+	nodoIzqu6[label = "Valor1:  4.5 "]
+	nodoDere6[label = "Valor2:  6.7 "]
+	nodoRespuesta6 -> nodoIzqu6
+	nodoRespuesta6 -> nodoDere6
+	nodoRespuesta7[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoIzqu7[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoDere7[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoRespuesta7[label = "multiplicacion:
+2.2203152929257595 "]
+	nodoIzqu7[label = "Valor1:  3.14 "]
+	nodoDere7[label = "Valor2:  0.7071067811865476 "]
+	nodoRespuesta7 -> nodoIzqu7
+	nodoRespuesta7 -> nodoDere7
+	nodoRespuesta8[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoIzqu8[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoDere8[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoRespuesta8[label = "division:
+0.046125461254612546 "]
+	nodoIzqu8[label = "Valor1:  0.125 "]
+	nodoDere8[label = "Valor2:  2.71 "]
+	nodoRespuesta8 -> nodoIzqu8
+	nodoRespuesta8 -> nodoDere8
+	nodoRespuesta9[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoIzqu9[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoDere9[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoRespuesta9[label = "resta:
+4.8 "]
+	nodoIzqu9[label = "Valor1:  9.6 "]
+	nodoDere9[label = "Valor2:  4.8 "]
+	nodoRespuesta9 -> nodoIzqu9
+	nodoRespuesta9 -> nodoDere9
+	nodoRespuesta10[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoIzqu10[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoDere10[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoRespuesta10[label = "suma:
+9.0 "]
+	nodoIzqu10[label = "Valor1:  1.11 "]
+	nodoDere10[label = "Valor2:  7.89 "]
+	nodoRespuesta10 -> nodoIzqu10
+	nodoRespuesta10 -> nodoDere10
+	nodoRespuesta11[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoIzqu11[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoDere11[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoRespuesta11[label = "multiplicacion:
+3.8451527928029074 "]
+	nodoIzqu11[label = "Valor1:  6.66 "]
+	nodoDere11[label = "Valor2:  0.5773502691896257 "]
+	nodoRespuesta11 -> nodoIzqu11
+	nodoRespuesta11 -> nodoDere11
+	nodoRespuesta12[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoIzqu12[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoDere12[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoRespuesta12[label = "division:
+0.025025025025025023 "]
+	nodoIzqu12[label = "Valor1:  0.08333333333333333 "]
+	nodoDere12[label = "Valor2:  3.33 "]
+	nodoRespuesta12 -> nodoIzqu12
+	nodoRespuesta12 -> nodoDere12
+	nodoRespuesta13[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoIzqu13[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoDere13[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoRespuesta13[label = "resta:
+5.0 "]
+	nodoIzqu13[label = "Valor1:  10.5 "]
+	nodoDere13[label = "Valor2:  5.5 "]
+	nodoRespuesta13 -> nodoIzqu13
+	nodoRespuesta13 -> nodoDere13
+	nodoRespuesta14[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoIzqu14[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoDere14[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoRespuesta14[label = "suma:
+11.100000000000001 "]
+	nodoIzqu14[label = "Valor1:  2.22 "]
+	nodoDere14[label = "Valor2:  8.88 "]
+	nodoRespuesta14 -> nodoIzqu14
+	nodoRespuesta14 -> nodoDere14
+	nodoRespuesta15[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoIzqu15[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoDere15[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoRespuesta15[label = "multiplicacion:
+4.806440991003634 "]
+	nodoIzqu15[label = "Valor1:  5.55 "]
+	nodoDere15[label = "Valor2:  0.8660254037844386 "]
+	nodoRespuesta15 -> nodoIzqu15
+	nodoRespuesta15 -> nodoDere15
+	nodoRespuesta16[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoIzqu16[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoDere16[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoRespuesta16[label = "division:
+1.3791067557965687e-17 "]
+	nodoIzqu16[label = "Valor1:  6.123233995736766e-17 "]
+	nodoDere16[label = "Valor2:  4.44 "]
+	nodoRespuesta16 -> nodoIzqu16
+	nodoRespuesta16 -> nodoDere16
+	nodoRespuesta17[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoIzqu17[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoDere17[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoRespuesta17[label = "resta:
+6.3999999999999995 "]
+	nodoIzqu17[label = "Valor1:  8.7 "]
+	nodoDere17[label = "Valor2:  2.3 "]
+	nodoRespuesta17 -> nodoIzqu17
+	nodoRespuesta17 -> nodoDere17
+	nodoRespuesta18[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoIzqu18[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoDere18[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoRespuesta18[label = "suma:
+13.32 "]
+	nodoIzqu18[label = "Valor1:  3.33 "]
+	nodoDere18[label = "Valor2:  9.99 "]
+	nodoRespuesta18 -> nodoIzqu18
+	nodoRespuesta18 -> nodoDere18
+	nodoRespuesta19[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoIzqu19[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoDere19[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoRespuesta19[label = "multiplicacion:
+7.5052436702660605 "]
+	nodoIzqu19[label = "Valor1:  7.77 "]
+	nodoDere19[label = "Valor2:  0.9659258262890683 "]
+	nodoRespuesta19 -> nodoIzqu19
+	nodoRespuesta19 -> nodoDere19
+	nodoRespuesta20[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoIzqu20[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoDere20[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoRespuesta20[label = "division:
+0.7507507507507507 "]
+	nodoIzqu20[label = "Valor1:  5.0 "]
+	nodoDere20[label = "Valor2:  6.66 "]
+	nodoRespuesta20 -> nodoIzqu20
+	nodoRespuesta20 -> nodoDere20
+	nodoRespuesta21[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoIzqu21[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoDere21[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoRespuesta21[label = "resta:
+4.699999999999999 "]
+	nodoIzqu21[label = "Valor1:  5.6 "]
+	nodoDere21[label = "Valor2:  0.9 "]
+	nodoRespuesta21 -> nodoIzqu21
+	nodoRespuesta21 -> nodoDere21
+	nodoRespuesta22[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoIzqu22[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoDere22[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoRespuesta22[label = "suma:
+12.21 "]
+	nodoIzqu22[label = "Valor1:  4.44 "]
+	nodoDere22[label = "Valor2:  7.77 "]
+	nodoRespuesta22 -> nodoIzqu22
+	nodoRespuesta22 -> nodoDere22
+	nodoRespuesta23[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoIzqu23[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoDere23[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoRespuesta23[label = "multiplicacion:
+888.0000000000001 "]
+	nodoIzqu23[label = "Valor1:  8.88 "]
+	nodoDere23[label = "Valor2:  100 "]
+	nodoRespuesta23 -> nodoIzqu23
+	nodoRespuesta23 -> nodoDere23
+	nodoRespuesta24[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoIzqu24[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoDere24[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoRespuesta24[label = "resta:
+1.2999999999999998 "]
+	nodoIzqu24[label = "Valor1:  3.4 "]
+	nodoDere24[label = "Valor2:  2.1 "]
+	nodoRespuesta24 -> nodoIzqu24
+	nodoRespuesta24 -> nodoDere24
+	nodoRespuesta25[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoIzqu25[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoDere25[style = filled,fillcolor = yellow,fontcolor = black]
+	nodoRespuesta25[label = "suma:
+12.21 "]
+	nodoIzqu25[label = "Valor1:  5.55 "]
+	nodoDere25[label = "Valor2:  6.66 "]
+	nodoRespuesta25 -> nodoIzqu25
+	nodoRespuesta25 -> nodoDere25
 
 }

@@ -142,7 +142,7 @@ class TextEditorApp:
             estructura_datos["errores"].append(estructura_error)
 
         # Nombre del archivo JSON de salida
-        nombre_archivo = "errores.json"
+        nombre_archivo = "RESULTADOS_202200002.json"
 
         # Escribir los datos en el archivo JSON
         with open(nombre_archivo, 'w') as archivo:
@@ -202,17 +202,60 @@ def Graphviz(respuestas_Operaciones):
                     if respuesta.ejecutarT() == "texto":  
                         Titulo = str(respuesta.texto.operar(None))
                     if respuesta.ejecutarT() == "fondo":  
+                        if temporal == ("amarillo" or "yellow"):
+                            temporal = "yellow"
                             colorNodo = temporal
+                        elif temporal == ("verde" or "green"):
+                            temporal = "green"
+                            colorNodo = temporal
+                        elif temporal == ("azul" or "blue"):
+                            temporal = "blue"
+                            colorNodo = temporal
+                        elif temporal == ("rojo" or "red"):
+                            temporal = "red"
+                            colorNodo = temporal
+                        elif temporal == ("morado" or "purple"):
+                            temporal = "purple"
 
-
-                    if respuesta.ejecutarT() == "fuente": 
+                    if respuesta.ejecutarT() == "fuente":                         
+                        if temporal == ("amarillo" or "yellow"):
+                            temporal = "yellow"
+                            fuenteNodo = temporal
+                        elif temporal == ("verde" or "green"):
+                            temporal = "green"
+                            fuenteNodo = temporal
+                        elif temporal == ("azul" or "blue"):
+                            temporal = "blue"
+                            fuenteNodo = temporal
+                        elif temporal == ("rojo" or "red"):
+                            temporal = "red"
+                            fuenteNodo = temporal
+                        elif temporal == ("morado" or "purple"):
+                            temporal = "purple"
+                            fuenteNodo = temporal
+                        elif temporal == ("negro" or "black"):
+                            temporal = "black"
+                        if respuesta.ejecutarT() == "fuente": 
 
                             fuenteNodo = temporal
 
 
                     if respuesta.ejecutarT() == "forma":  
 
+                        if temporal == ("circulo" or "circle"):
+                            temporal = "circle"
                             formaNodo = temporal
+                        elif temporal == ("cuadrado" or "square"):
+                            temporal = "square"
+                            formaNodo = temporal
+                        elif temporal == ("triangulo" or "triangle"):
+                            temporal = "triangle"
+                            formaNodo = temporal
+                        elif temporal == ("rectangulo" or "box"):
+                            temporal = "box"
+                            formaNodo = temporal
+                        elif temporal == ("elipse" or "ellipse"):
+                            temporal = "ellipse"
 
 
 
